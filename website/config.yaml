@@ -1,4 +1,4 @@
-baseURL: "https://hugo-profile.netlify.app"
+baseURL: "https://sanshay.github.io"
 languageCode: "en-us"
 title: "Sanshay Katyal"
 theme: "./.."
@@ -142,7 +142,7 @@ params:
   email: "sanshaykatyal@mail.com"
 
   # Footer
-  socialiconfooter: true
+  socialiconfooter: false
   recentposts: true
 
   # Blog
