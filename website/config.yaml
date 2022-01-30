@@ -66,7 +66,7 @@ params:
   disable_experience: false
   experience:
     - company: "MattsenKumar LLC"
-      # id: "google-developer"   // use this, when you want to change the id(used for navigation)
+      id: "google-developer"   #// use this, when you want to change the id(used for navigation)
       role: "Senior Associate"
       startdate: July 2020
       enddate: present
@@ -74,8 +74,8 @@ params:
         # - point: Lead backend developer for a product.
         # - point: Created a frontend design for a product.
     - company: "Flaunt7"
-      # id: "facebook-developer" // use this, when you want to change the id(used for navigation)
-      role: "Senior developer"
+      # id: "facebook-developer" #// use this, when you want to change the id(used for navigation)
+      role: "Senior Developer"
       startdate: May 2019
       enddate: Sept 2019
       featuredpoints:
