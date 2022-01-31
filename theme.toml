@@ -1,9 +1,9 @@
-name = "Sanshay's Blog"
+name = "Aditi's Blog"
 license = "MIT"
 licenselink = "https://github.com/gurusabarish/hugo-profile/blob/master/LICENSE"
 description = "A high performance and mobile first hugo template for personal portfolio and blog."
-homepage = "https://github.com/sanshay/sanshay.github.io"
-demosite = "https://sanshay.github.io"
+homepage = "https://github.com/aditijaizwal/aditijaizwal.github.io"
+demosite = "https://aditijaizwal.github.io"
 tags = ["Responsive","Blog", "Portfolio", "Personal"]
 min_version = "0.68.0"
 
