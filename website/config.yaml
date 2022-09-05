@@ -66,7 +66,7 @@ params:
   disable_experience: false
   experience:
     - company: "Triton Electric Vehicle"
-      id: "google-developer"   #// use this, when you want to change the id(used for navigation)
+      id: "triton-developer"   #// use this, when you want to change the id(used for navigation)
       role: "Embedded Software Engineer"
       startdate: June 2022
       enddate: present
@@ -74,7 +74,7 @@ params:
         # - point: Lead backend developer for a product.
         # - point: Created a frontend design for a product.
     - company: "HashOrg Tech"
-      # id: "facebook-developer" #// use this, when you want to change the id(used for navigation)
+      id: "hashorg-developer" #// use this, when you want to change the id(used for navigation)
       role: "Software Engineer"
       startdate: May 2022
       enddate: June 2022
@@ -82,7 +82,7 @@ params:
         # - point: Lead backend developer for a product.
         # - point: Created a frontend design for a product.
     - company: "MattsenKumar LLC"
-      # id: "amazon-developer" // use this, when you want to change the id(used for navigation)
+      id: "mattsen-associate" // use this, when you want to change the id(used for navigation)
       role: "Senior Associate"
       startdate: Sept 2020
       enddate: April 2022
@@ -139,7 +139,7 @@ params:
   # Contact
   disable_contact: false
   contact_content: My inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!
-  email: "sanshaykatyal@mail.com"
+  email: "sanshaykatyal@gmail.com"
 
   # Footer
   socialiconfooter: false
