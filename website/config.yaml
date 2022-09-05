@@ -82,7 +82,7 @@ params:
         # - point: Lead backend developer for a product.
         # - point: Created a frontend design for a product.
     - company: "MattsenKumar LLC"
-      id: "mattsen-associate" // use this, when you want to change the id(used for navigation)
+      id: "mattsen-associate" #// use this, when you want to change the id(used for navigation)
       role: "Senior Associate"
       startdate: Sept 2020
       enddate: April 2022
