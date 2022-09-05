@@ -65,30 +65,30 @@ params:
   # Experience
   disable_experience: false
   experience:
-    - company: "MattsenKumar LLC"
+    - company: "Triton Electric Vehicle"
       id: "google-developer"   #// use this, when you want to change the id(used for navigation)
-      role: "Senior Associate"
-      startdate: July 2020
+      role: "Embedded Software Engineer"
+      startdate: June 2022
       enddate: present
       featuredpoints:
         # - point: Lead backend developer for a product.
         # - point: Created a frontend design for a product.
-    - company: "Flaunt7"
+    - company: "HashOrg Tech"
       # id: "facebook-developer" #// use this, when you want to change the id(used for navigation)
-      role: "Senior Developer"
-      startdate: May 2019
-      enddate: Sept 2019
+      role: "Software Engineer"
+      startdate: May 2022
+      enddate: June 2022
       featuredpoints:
         # - point: Lead backend developer for a product.
         # - point: Created a frontend design for a product.
-    # - company: "Amazon"
-    #   # id: "amazon-developer" // use this, when you want to change the id(used for navigation)
-    #   role: "Fullstack developer"
-    #   startdate: Feb 2019
-    #   enddate: Jan 2020
-    #   featuredpoints:
-    #     - point: Lead backend developer for a product.
-    #     - point: Created a frontend design for a product.
+    - company: "MattsenKumar LLC"
+      # id: "amazon-developer" // use this, when you want to change the id(used for navigation)
+      role: "Senior Associate"
+      startdate: Sept 2020
+      enddate: April 2022
+      # featuredpoints:
+      #   - point: Lead backend developer for a product.
+      #   - point: Created a frontend design for a product.
 
   # Education
   disable_education: false
