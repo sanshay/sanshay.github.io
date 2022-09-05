@@ -110,7 +110,7 @@ params:
       graduation: "2017"
 
   # Projects
-  disable_projects: false
+  disable_projects: true
   projects:
     - name: "Example project without details"
       img: /images/project.jpg
@@ -119,7 +119,7 @@ params:
       description: "Description of project"
 
   # Achievements
-  disable_achievements: false
+  disable_achievements: true
   achievements:
     - title: Competition winner
       description: We are developed a product which can help others.
