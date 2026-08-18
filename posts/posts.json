@@ -1,0 +1,71 @@
+[
+  {
+    "file": "hello-world.md",
+    "slug": "hello-world",
+    "title": "Hello, world — rebuilding my engineering blog",
+    "date": "2026-08-18",
+    "description": "A fresh start for my technical notes, projects and experiments.",
+    "tags": [
+      "Personal",
+      "Engineering"
+    ],
+    "draft": false,
+    "readingTime": "1 min read"
+  },
+  {
+    "file": "fpv-drones.md",
+    "slug": "fpv-drones",
+    "title": "Why FPV drones became one of my favourite engineering hobbies",
+    "date": "2026-08-16",
+    "description": "What makes FPV drones so addictive to build, tune and fly — and what they taught me about embedded systems, RF links and real-time control.",
+    "tags": [
+      "FPV",
+      "Drones",
+      "Embedded",
+      "Engineering"
+    ],
+    "draft": false,
+    "readingTime": "5 min read"
+  },
+  {
+    "file": "esp32-home-automation.md",
+    "slug": "esp32-home-automation",
+    "title": "Building my own home automation system with ESP32",
+    "date": "2026-08-14",
+    "description": "How I approached a local-first ESP32 home automation system with Wi-Fi devices, sensors, relays, MQTT and a simple dashboard.",
+    "tags": [
+      "ESP32",
+      "Home Automation",
+      "IoT",
+      "MQTT"
+    ],
+    "draft": false,
+    "readingTime": "5 min read"
+  },
+  {
+    "file": "can-bus-notes.md",
+    "slug": "can-bus-notes",
+    "title": "Practical CAN Bus debugging notes",
+    "date": "2026-08-12",
+    "description": "A compact checklist for debugging filters, IDs, payloads and bitrate mismatches on vehicle networks.",
+    "tags": [
+      "CAN Bus",
+      "Embedded"
+    ],
+    "draft": false,
+    "readingTime": "1 min read"
+  },
+  {
+    "file": "esp32-workbench.md",
+    "slug": "esp32-workbench",
+    "title": "Turning an ESP32 display board into a tiny workbench",
+    "date": "2026-08-05",
+    "description": "Ideas for using a compact ESP32 display as a self-contained notification panel, sensor console and pocket UI.",
+    "tags": [
+      "ESP32",
+      "IoT"
+    ],
+    "draft": false,
+    "readingTime": "1 min read"
+  }
+]

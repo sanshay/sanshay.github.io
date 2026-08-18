@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Articles by Sanshay Katyal on embedded systems, IoT, EV technology, software and engineering." />
+  <title>Blog — Sanshay Katyal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="shell nav-wrap">
+      <a class="brand" href="index.html">SK<span>.</span></a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="index.html#about">About</a>
+        <a class="active" href="blog.html">Blog</a>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">◐</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="shell blog-page">
+    <section class="blog-hero">
+      <p class="eyebrow">WRITING</p>
+      <h1>Engineering notes,<br><span>projects & ideas.</span></h1>
+      <p>Markdown-powered posts about embedded systems, IoT, EVs, hydrogen, UAVs, software and things I’m learning along the way.</p>
+    </section>
+
+    <section class="toolbar" aria-label="Blog filters">
+      <label class="search-box">
+        <span>⌕</span>
+        <input id="searchInput" type="search" placeholder="Search posts…" autocomplete="off" />
+      </label>
+      <div class="tag-filter" id="tagFilter"></div>
+    </section>
+
+    <section class="post-list" id="postList">
+      <div class="loading-card">Loading posts…</div>
+    </section>
+
+    <section class="markdown-help">
+      <div>
+        <p class="eyebrow">ADD A POST</p>
+        <h2>Write in Markdown. Publish with Git.</h2>
+        <p>Add a new <code>.md</code> file inside <code>/posts</code>, then run <code>npm run build:posts</code>. The blog index is rebuilt automatically from your Markdown front matter.</p>
+      </div>
+      <a class="btn ghost" href="posts/hello-world.md">See example .md</a>
+    </section>
+  </main>
+
+  <footer class="footer shell">
+    <p>© <span id="year"></span> Sanshay Katyal.</p>
+    <p>Built for GitHub Pages · Markdown-powered.</p>
+  </footer>
+
+  <script src="js/site.js"></script>
+  <script src="js/blog.js"></script>
+</body>
+</html>

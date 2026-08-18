@@ -1,0 +1,9 @@
+{
+  "name": "sanshay-katyal-blog",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build:posts": "node scripts/generate-posts.mjs",
+    "build": "npm run build:posts"
+  }
+}
