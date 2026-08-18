@@ -6,10 +6,12 @@ let activeTag = 'All';
   try {
     const res = await fetch('posts/posts.json', { cache: 'no-store' });
     posts = (await res.json()).filter(p => p.draft !== true);
+    const count = document.getElementById('blogPostCount');
+    if (count) count.textContent = posts.length;
     setupTags();
     render();
   } catch (err) {
-    list.innerHTML = '<div class="loading-card">Could not load posts.json. Run <code>npm run build:posts</code>.</div>';
+    list.innerHTML = '<div class="loading-card">Could not load the blog index.</div>';
   }
 })();
 
@@ -41,10 +43,11 @@ function render() {
     list.innerHTML = '<div class="loading-card">No posts match your search.</div>';
     return;
   }
-  list.innerHTML = filtered.map(post => `
+  list.innerHTML = filtered.map((post, index) => `
     <a class="post-row" href="post.html?slug=${encodeURIComponent(post.slug)}">
-      <div class="meta">${formatDate(post.date)}<br>${post.readingTime || ''}</div>
+      <div class="meta">${String(index + 1).padStart(2, '0')} / ${formatDate(post.date)}<br>${post.readingTime || ''}</div>
       <div>
+        <div class="tags">${(post.tags || []).slice(0,3).map(t => `<span class="tag">${escapeHtml(t)}</span>`).join('')}</div>
         <h2>${escapeHtml(post.title)}</h2>
         <p>${escapeHtml(post.description || '')}</p>
       </div>

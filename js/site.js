@@ -1,17 +1,16 @@
 (() => {
-  const root = document.documentElement;
-  const saved = localStorage.getItem('sk-theme');
-  const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-  root.dataset.theme = saved || (prefersDark ? 'dark' : 'light');
-
-  const toggle = document.getElementById('themeToggle');
-  if (toggle) {
-    toggle.addEventListener('click', () => {
-      root.dataset.theme = root.dataset.theme === 'dark' ? 'light' : 'dark';
-      localStorage.setItem('sk-theme', root.dataset.theme);
-    });
-  }
-
   const year = document.getElementById('year');
   if (year) year.textContent = new Date().getFullYear();
+
+  const progress = document.getElementById('readingProgress');
+  if (progress) {
+    const updateProgress = () => {
+      const max = document.documentElement.scrollHeight - window.innerHeight;
+      const value = max > 0 ? Math.min(100, Math.max(0, (window.scrollY / max) * 100)) : 0;
+      progress.style.width = `${value}%`;
+    };
+    updateProgress();
+    addEventListener('scroll', updateProgress, { passive: true });
+    addEventListener('resize', updateProgress);
+  }
 })();

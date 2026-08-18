@@ -12,7 +12,7 @@
     const mdRes = await fetch(`posts/${encodeURIComponent(post.file)}`, { cache: 'no-store' });
     if (!mdRes.ok) return showError('Markdown file could not be loaded.');
     const raw = await mdRes.text();
-    const body = stripFrontMatter(raw);
+    const body = stripLeadingTitle(stripFrontMatter(raw));
     const html = DOMPurify.sanitize(marked.parse(body));
 
     document.title = `${post.title} — Sanshay Katyal`;
@@ -21,6 +21,7 @@
         <p class="eyebrow">${escapeHtml((post.tags || [])[0] || 'BLOG')}</p>
         <h1>${escapeHtml(post.title)}</h1>
         <p class="description">${escapeHtml(post.description || '')}</p>
+        <div class="tags">${(post.tags || []).map(t => `<span class="tag">${escapeHtml(t)}</span>`).join('')}</div>
         <p class="meta">${formatDate(post.date)} · ${escapeHtml(post.readingTime || '')}</p>
       </header>
       <div class="article-content">${html}</div>`;
@@ -37,6 +38,9 @@ function stripFrontMatter(text) {
   if (!text.startsWith('---')) return text;
   const end = text.indexOf('\n---', 3);
   return end === -1 ? text : text.slice(end + 4).trimStart();
+}
+function stripLeadingTitle(text) {
+  return text.replace(/^#\s+[^\n]+\n+/, '');
 }
 function formatDate(value) {
   if (!value) return 'Undated';

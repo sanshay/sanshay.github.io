@@ -3,35 +3,51 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Articles by Sanshay Katyal on embedded systems, IoT, EV technology, software and engineering." />
+  <meta name="description" content="Engineering articles by Sanshay Katyal on embedded systems, IoT, EV and hydrogen technology, UAVs and software." />
+  <meta name="theme-color" content="#070a11" />
   <title>Blog — Sanshay Katyal</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/style.css" />
   <link rel="icon" type="image/png" href="assets/favicon.png" />
   <link rel="apple-touch-icon" href="assets/favicon.png" />
 </head>
 <body>
-  <header class="site-header">
-    <div class="shell nav-wrap">
-      <a class="brand" href="index.html">SK<span>.</span></a>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+
+  <header class="site-header shell">
+    <div class="nav-wrap glass-panel">
+      <a class="brand-lockup" href="index.html"><span class="brand">SK<span>.</span></span><span class="brand-name">Sanshay Katyal</span></a>
       <nav class="nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
         <a href="index.html#about">About</a>
         <a class="active" href="blog.html">Blog</a>
-        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">◐</button>
       </nav>
+      <div class="nav-socials">
+        <a class="icon-btn" href="https://github.com/sanshay" target="_blank" rel="noreferrer" aria-label="GitHub"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.48 2 2 6.58 2 12.23c0 4.52 2.87 8.36 6.84 9.72.5.1.68-.22.68-.49 0-.24-.01-1.04-.01-1.88-2.78.62-3.37-1.21-3.37-1.21-.45-1.19-1.11-1.5-1.11-1.5-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.9 1.57 2.35 1.12 2.92.86.09-.66.35-1.12.64-1.38-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.28 2.75 1.05A9.3 9.3 0 0 1 12 6.98a9.3 9.3 0 0 1 2.5.35c1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.94-2.35 4.8-4.58 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.59.69.49A10.25 10.25 0 0 0 22 12.23C22 6.58 17.52 2 12 2Z"/></svg></a>
+        <a class="icon-btn" href="https://in.linkedin.com/in/sanshay-katyal" target="_blank" rel="noreferrer" aria-label="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.94 8.5H3.56V19h3.38V8.5ZM5.25 3A1.96 1.96 0 1 0 5.25 6.92 1.96 1.96 0 0 0 5.25 3ZM20.44 12.98c0-3.16-1.69-4.63-3.94-4.63-1.82 0-2.63 1-3.09 1.7V8.5h-3.38c.04 1.03 0 10.5 0 10.5h3.38v-5.86c0-.31.02-.63.11-.85.24-.63.79-1.28 1.72-1.28 1.21 0 1.7.93 1.7 2.29V19h3.38l.12-6.02Z"/></svg></a>
+      </div>
     </div>
   </header>
 
   <main class="shell blog-page">
     <section class="blog-hero">
-      <p class="eyebrow">WRITING</p>
-      <h1>Engineering notes,<br><span>projects & ideas.</span></h1>
-      <p>Markdown-powered posts about embedded systems, IoT, EVs, hydrogen, UAVs, software and things I’m learning along the way.</p>
+      <div class="blog-hero-copy">
+        <p class="eyebrow">WRITING / ENGINEERING NOTES</p>
+        <h1>Build notes,<br><span>projects & ideas.</span></h1>
+        <p>Writing about embedded systems, IoT, CAN, EV and hydrogen technology, UAVs, software and the things I learn while building.</p>
+      </div>
+      <div class="blog-summary-card">
+        <div class="summary-top"><span class="status-dot"></span><span>LIVE INDEX</span></div>
+        <strong id="blogPostCount">5</strong>
+        <p>published posts</p>
+        <small>Markdown files → searchable blog</small>
+      </div>
     </section>
 
-    <section class="toolbar" aria-label="Blog filters">
+    <section class="toolbar glass-panel" aria-label="Blog filters">
       <label class="search-box">
         <span>⌕</span>
         <input id="searchInput" type="search" placeholder="Search posts…" autocomplete="off" />
@@ -42,12 +58,12 @@
     <section class="post-list" id="postList">
       <div class="loading-card">Loading posts…</div>
     </section>
-
   </main>
 
   <footer class="footer shell">
-    <p>© <span id="year"></span> Sanshay Katyal.</p>
-    <p>Built for GitHub Pages · Markdown-powered.</p>
+    <div class="footer-brand"><span class="brand">SK<span>.</span></span><p>Sanshay Katyal</p></div>
+    <p>Engineering notes from the workbench.</p>
+    <p>© <span id="year"></span></p>
   </footer>
 
   <script src="js/site.js"></script>
