@@ -114,31 +114,149 @@
       </div>
     </section>
 
-    <section class="section shell" id="about">
-      <div class="section-head split-head">
+    <section class="section shell about-section" id="about">
+      <div class="section-head split-head about-heading">
         <div>
-          <p class="eyebrow">ABOUT</p>
-          <h2>Engineering across the stack.</h2>
+          <p class="eyebrow">ABOUT ME</p>
+          <h2>I build software that talks to the real world.</h2>
         </div>
-        <p>I work where hardware, firmware and real-world systems meet — from CAN-connected vehicle electronics and ESP32 devices to IoT, UAVs and applied software.</p>
+        <div class="about-lead">
+          <p>I’m Sanshay Katyal, an embedded software engineer who likes working at the boundary between code, electronics and machines.</p>
+          <p>Most of my work revolves around connected hardware, vehicle electronics, control systems and the tooling needed to make complex systems understandable.</p>
+        </div>
       </div>
 
-      <div class="about-panels">
-        <div class="about-card accent-card">
-          <span class="card-kicker">CURRENTLY</span>
-          <h3>Embedded Software Engineer at Triton Electric Vehicle.</h3>
-          <p>Working on embedded systems and vehicle technology, while continuing to explore connected hardware, EV and hydrogen systems.</p>
-          <div class="skills">
-            <span>Embedded C/C++</span><span>CAN Bus</span><span>ESP32</span><span>Python</span><span>IoT</span><span>Linux</span><span>Web</span><span>Electronics</span>
+      <div class="about-dashboard">
+        <article class="about-profile glass-panel">
+          <div class="profile-topline">
+            <span class="card-kicker">PROFILE / 01</span>
+            <span class="availability"><i></i> BUILDING</span>
           </div>
+          <h3>From firmware to full systems.</h3>
+          <p class="profile-copy">I enjoy taking a problem from the first signal on a scope or CAN trace all the way to a working product, dashboard or vehicle subsystem. That means moving comfortably between firmware, networking, sensors, debugging, backend logic and user-facing software.</p>
+
+          <div class="profile-quote">
+            <span>//</span>
+            <p>Make the hardware observable. Make the software understandable. Then make the whole system reliable.</p>
+          </div>
+
+          <div class="skill-groups">
+            <div>
+              <small>EMBEDDED</small>
+              <p>C / C++ · ESP32 · CAN Bus · Sensors · Control</p>
+            </div>
+            <div>
+              <small>SOFTWARE</small>
+              <p>Python · Linux · Web · APIs · Dashboards</p>
+            </div>
+            <div>
+              <small>SYSTEMS</small>
+              <p>IoT · EV / Hydrogen · UAVs · Connectivity</p>
+            </div>
+          </div>
+        </article>
+
+        <aside class="about-journey glass-panel">
+          <div class="panel-title-row">
+            <span class="card-kicker">JOURNEY / 02</span>
+            <span class="mono-mark">~/career</span>
+          </div>
+          <div class="timeline">
+            <div class="timeline-item active">
+              <span class="timeline-dot"></span>
+              <div>
+                <small>JUN 2022 — NOW</small>
+                <h4>Embedded Software Engineer</h4>
+                <p>Triton Electric Vehicle</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <span class="timeline-dot"></span>
+              <div>
+                <small>MAY — JUN 2022</small>
+                <h4>Software Engineer</h4>
+                <p>HashOrg Tech</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <span class="timeline-dot"></span>
+              <div>
+                <small>2019 — 2023</small>
+                <h4>B.Tech · Computer Science</h4>
+                <p>Sharda University</p>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+
+      <div class="about-builds">
+        <div class="section-mini-head">
+          <div>
+            <span class="card-kicker">WHAT I WORK ON / 03</span>
+            <h3>Systems I like getting my hands on.</h3>
+          </div>
+          <p>Some of the domains that keep showing up on my workbench.</p>
         </div>
-        <div class="about-card terminal-note">
-          <span class="card-kicker">WORKBENCH.LOG</span>
-          <p><b>01</b> Build practical systems.</p>
-          <p><b>02</b> Debug until the signal makes sense.</p>
-          <p><b>03</b> Document what was learned.</p>
-          <p><b>04</b> Turn experiments into reusable engineering.</p>
+
+        <div class="build-grid">
+          <article class="build-card">
+            <span class="build-index">01</span>
+            <span class="build-icon">⌁</span>
+            <h4>Vehicle electronics</h4>
+            <p>CAN-connected ECUs, VCU logic, controls, instrumentation and the debugging needed to make vehicle subsystems cooperate.</p>
+            <div class="micro-tags"><span>CAN</span><span>VCU</span><span>EV</span></div>
+          </article>
+          <article class="build-card">
+            <span class="build-index">02</span>
+            <span class="build-icon">◫</span>
+            <h4>Connected devices</h4>
+            <p>ESP32-based hardware, sensors, local networks and IoT systems that turn physical-world data into something useful.</p>
+            <div class="micro-tags"><span>ESP32</span><span>Wi-Fi</span><span>IoT</span></div>
+          </article>
+          <article class="build-card">
+            <span class="build-index">03</span>
+            <span class="build-icon">△</span>
+            <h4>UAVs & FPV</h4>
+            <p>Flight hardware, radio links, tuning and the systems thinking that makes a fast-moving flying machine predictable.</p>
+            <div class="micro-tags"><span>FPV</span><span>UAV</span><span>RF</span></div>
+          </article>
+          <article class="build-card">
+            <span class="build-index">04</span>
+            <span class="build-icon">⌘</span>
+            <h4>Applied software</h4>
+            <p>Dashboards, automation and small tools that make engineering systems easier to operate, inspect and iterate on.</p>
+            <div class="micro-tags"><span>Python</span><span>Web</span><span>Linux</span></div>
+          </article>
         </div>
+      </div>
+
+      <div class="about-bottom-grid">
+        <article class="toolbox-card glass-panel">
+          <div class="panel-title-row">
+            <span class="card-kicker">TOOLBOX / 04</span>
+            <span class="mono-mark">stack.json</span>
+          </div>
+          <div class="tool-cloud">
+            <span>Embedded C/C++</span><span>CAN Bus</span><span>ESP32</span><span>Python</span><span>Linux</span><span>IoT</span><span>Git</span><span>Web</span><span>Electronics</span><span>RF</span><span>MQTT</span><span>Debugging</span>
+          </div>
+        </article>
+
+        <article class="side-projects-card glass-panel">
+          <div class="panel-title-row">
+            <span class="card-kicker">AFTER HOURS / 05</span>
+            <span class="mono-mark">lab.open()</span>
+          </div>
+          <div class="side-project-row">
+            <span class="side-project-number">A</span>
+            <div><h4>FPV drones</h4><p>Build, tune, fly, crash, diagnose, repeat.</p></div>
+          </div>
+          <div class="side-project-row">
+            <span class="side-project-number">B</span>
+            <div><h4>ESP32 home automation</h4><p>Local-first connected devices and practical automations around the house.</p></div>
+          </div>
+          <a href="blog.html" class="about-blog-link">Read the build notes <span>→</span></a>
+        </article>
       </div>
     </section>
 
